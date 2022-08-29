@@ -7,7 +7,7 @@ Complete the function getPositiveTemperatures such that it returns an array cont
 /**
  * @param {number[]} temperatures
  */
-function getPositiveTemperatures(temperatures) {
+/* function getPositiveTemperatures(temperatures) {
 const temp=[]; 
 temperatures.forEach(function(temperature) {
     if (temperature>0) {
@@ -15,7 +15,15 @@ temperatures.forEach(function(temperature) {
     }
 })
 return temp;
+} */
+
+function getPositiveTemperatures(temperatures) {
+    let hotTemp = temperatures.filter(function(temperature){
+        return temperature > 0;
+    })
+    return hotTemp;
 }
+
 
 // Sample usage - do not modify
 console.log(getPositiveTemperatures([-5, 12, 3])); // [12, 3]
