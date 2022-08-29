@@ -7,7 +7,7 @@ from the numbers parameter it receives.
 /**
  * @param {number[]} numbers
  */
-function sumOddNumbers(numbers) {
+/* function sumOddNumbers(numbers) {
 let sumOdd =0;
 for (let i=0; i< numbers.length; i++) {
     if (numbers[i]%2 != 0) {
@@ -15,9 +15,17 @@ for (let i=0; i< numbers.length; i++) {
     }
 }
 return sumOdd;
+} */
+
+function sumOddNumbers(numbers) {
+    let sumOdd=0;
+numbers.forEach(function(number) { 
+    if (number%2 != 0) {
+        sumOdd += number;
+    }
+})
+return sumOdd;
 }
-
-
 
 // Sample usage - do not modify
 console.log(sumOddNumbers([15, 5, 10])); // 20

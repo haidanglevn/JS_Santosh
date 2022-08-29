@@ -7,13 +7,21 @@ it receives as a parameter.
 /**
  * @param {number[]} grades
  */
-function sumGrades(grades) {
+/* function sumGrades(grades) {
 let sum=0;
 for (let i=0; i< grades.length; i++) {
     console.log(grades[i]);
     sum += parseInt(grades[i]);
 }
 return "sum = " + sum;
+} */
+
+function sumGrades(grades) {
+    let sum=0;
+    grades.forEach(function(grade) {
+        sum += grade; 
+    })
+    return sum; 
 }
 
 // Sample usage - do not modify
