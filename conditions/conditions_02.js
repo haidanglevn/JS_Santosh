@@ -9,4 +9,13 @@ Handles empty text box
 
  * @param {string} age
  */
-function getNextAge(age) {}
+let age;
+function getNextAge(age) {
+  if (isNaN(age)) {
+    age = 0;
+  } else {
+    age += 1;
+  }
+  console.log("Your age next year is ", age);
+}
+getNextAge();

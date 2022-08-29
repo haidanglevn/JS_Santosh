@@ -12,6 +12,15 @@ Call that function 2 times with different number pairs, and log the output to ma
  * @param {numbers} 
  */
 
-function greaterNum(num1, num2) {}
+function greaterNum(num1, num2) {
+  if (num1 > num2) {
+    return "Greater number is " + num1;
+  } else if (num2 > num1) {
+    return "Greater number is " + num2;
+  } else {
+    return "Two numbers are equal";
+  }
+}
 
 console.log(greaterNum(5, 10));
+console.log(greaterNum(5, 5));
