@@ -8,7 +8,11 @@ from the years parameter it receives.
  * @param {number[]} years
  */
 function getOddYears(years) {
-
+let result = years.filter(function(year) {
+    return year%2!=0;
+    
+});
+return result;
 }
 
 // Sample usage - do not modify

@@ -8,9 +8,14 @@ Otherwise, it should return undefined.
  * @param {number[]} years
  * @param {number} searchYear
  */
+let result;
 function getYear(years, searchYear) {
-
+    result = years.find(function(year) {
+        return year === searchYear;
+    });
+    return result;
 }
+
 
 // Sample usage - do not modify
 console.log(getYear([2019, 2020, 2021], 2020)); // 2020
