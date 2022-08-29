@@ -22,9 +22,11 @@ function getFreezingTemperatures(temperatures) {
     let freezeTemp= temperatures.filter(function(temperature){
         return temperature<0;
     })
+    return freezeTemp;
 }
-return freezeTemp;
+
 
 // Sample usage - do not modify
+
 console.log(getFreezingTemperatures([-5, 12, 3])); // [-5]
 console.log(getFreezingTemperatures([1, -3, -2, 4, 10])); // [-3,-2]
