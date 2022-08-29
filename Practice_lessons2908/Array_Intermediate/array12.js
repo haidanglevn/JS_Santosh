@@ -8,7 +8,13 @@ Complete the function getPositiveTemperatures such that it returns an array cont
  * @param {number[]} temperatures
  */
 function getPositiveTemperatures(temperatures) {
-
+const temp=[]; 
+temperatures.forEach(function(temperature) {
+    if (temperature>0) {
+        temp.push(temperature);
+    }
+})
+return temp;
 }
 
 // Sample usage - do not modify

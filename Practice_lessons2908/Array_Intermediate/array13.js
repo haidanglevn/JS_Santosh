@@ -7,10 +7,24 @@ the freezing temperatures (the temperatures that are below 0).
 /**
  * @param {number[]} temperatures
  */
-function getPositiveTemperatures(temperatures) {
-
+/* function getFreezingTemperatures(temperatures) {
+    const temp=[]; 
+    temperatures.forEach(function(temperature) {
+        if (temperature<0) {
+            temp.push(temperature);
+        }
+    })
+    return temp;
 }
+ */
+
+function getFreezingTemperatures(temperatures) {
+    let freezeTemp= temperatures.filter(function(temperature){
+        return temperature<0;
+    })
+}
+return freezeTemp;
 
 // Sample usage - do not modify
-console.log(getPositiveTemperatures([-5, 12, 3])); // [12, 3]
-console.log(getPositiveTemperatures([1, -3, -2, 4, 10])); // [1, 4, 10]
+console.log(getFreezingTemperatures([-5, 12, 3])); // [-5]
+console.log(getFreezingTemperatures([1, -3, -2, 4, 10])); // [-3,-2]
