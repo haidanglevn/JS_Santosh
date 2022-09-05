@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
 In computer science, a slug is a string used to identify a certain item. Oftentimes, this slug is used in the URL for Search Engine Optimization and better user experience.
@@ -16,12 +16,13 @@ Space characters should be replaced by dashes (-).
 /**
  * @param {string} name
  */
-const getSlug = name => {
-
-}
+const getSlug = (name) => {
+  return name.slice(0, 14).toLowerCase().trim().replaceAll(" ", "-");
+};
 
 // Sample usage - do not modify
 console.log(getSlug("IKEA table")); // "ikea-table"
 console.log(getSlug("200cm Bed")); // "200cm-bed"
 console.log(getSlug("Bedside lavalamp")); // "bedside-lavalam"
 console.log(getSlug("A B C noodles")); // "a-b-c-noodles"
+console.log(getSlug("iPhone 14 Pro Max 128gb")); // "a-b-c-noodles"

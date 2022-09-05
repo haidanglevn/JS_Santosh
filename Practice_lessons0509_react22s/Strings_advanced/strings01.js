@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
 Complete the function getMessage such that it returns the message it receives as a parameter.
@@ -6,9 +6,13 @@ The message should always end with a full stop (.).
 /**
  * @param {string} message
  */
-const getMessage = message => {
-
-}
+const getMessage = (message) => {
+  if (message.endsWith(".") == true) {
+    return message;
+  } else {
+    return message + ".";
+  }
+};
 
 // Sample usage - do not modify
 console.log(getMessage("Hello world")); // "Hello world."
