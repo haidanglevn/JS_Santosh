@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
 
@@ -20,9 +20,10 @@ let people = ["Sergei", "Mariia", "Boris", "Abel"];
 /**
  */
 
- /**
-  * @param {people[]} strings
-  */
+/**
+ * @param {people[]} strings
+ */
 
-  const people = ["Sergei", "Mariia", "Boris", "Abel"];
-  
+const people = ["Sergei", "Mariia", "Boris", "Abel"];
+people.shift();
+console.log(people);
