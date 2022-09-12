@@ -33,11 +33,12 @@ function getLastGrade(grades) {
  * @param {array} grades
  */
 function isTestTooEasy(grades) {
-  const result = grades.some(findGrade);
+  /* const result = grades.some(findGrade);
   function findGrade(grade) {
     return grade == 20;
   }
-  return result;
+  return result; */
+  return grades.some((grade) => grade == 20);
 }
 
 /**
@@ -45,11 +46,15 @@ function isTestTooEasy(grades) {
  * @param {number} grade
  */
 function gradeExists(grades, grade) {
-  const result = grades.some(findGrade);
+  /* const result = grades.some(findGrade);
   function findGrade(grade) {
     return grade == gradeToCheck.value;
   }
-  return result;
+  return result; */
+
+  return grades.includes(grade, 0);
+
+  /* return grades.some((grade) => grade == gradeToCheck.value) */
 }
 
 /**
