@@ -14,5 +14,5 @@ class Recipe {
 
 // Class usage
 let pasta = new Recipe("Pasta", 600);
+console.table("---------");
 let salad = new Recipe("Salad", 400);
-console.table([Recipe]);
