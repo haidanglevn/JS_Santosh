@@ -465,7 +465,12 @@ console.log("Hello ", _multipleFilesDefault.default);
 let result = _simpleNumberFormatterDefault.default(95566);
 console.log(result);
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","./multipleFiles":"9TXJg","@skalwar/simple_number_formatter":"hS6yd"}],"JacNc":[function(require,module,exports) {
+},{"./multipleFiles":"9TXJg","@skalwar/simple_number_formatter":"hS6yd","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc"}],"9TXJg":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+exports.default = "James";
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"JacNc"}],"JacNc":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -497,12 +502,7 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"9TXJg":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-exports.default = "James";
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"JacNc"}],"hS6yd":[function(require,module,exports) {
+},{}],"hS6yd":[function(require,module,exports) {
 'use strict';
 /**
  * Adds commas to a number
